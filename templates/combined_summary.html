@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Combined Summary</h2>
+<p style="text-align: justify;">{{ combined_summary }}</p>
+
+<h3>Included Summaries:</h3>
+<ul>
+    {% for entry in selected_entries %}
+    <li style="margin-bottom: 15px; text-align: justify;"><strong>{{ entry.title }}</strong> - {{ entry.summary }}</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'view_history' %}">Back to History</a>
+{% endblock %}

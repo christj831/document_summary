@@ -1,0 +1,92 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e; /* Slightly lighter background for contrast */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #8ab4f8; /* Accent bottom border */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff; /* Bright white for header title */
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #8ab4f8; /* Modern blue for links */
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #bb86fc; /* Accent color on hover */
+}
+
+main {
+    background-color: #1a1a1a; /* Slightly lighter section for content */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* Block Content Styling */
+h2 {
+    color: #bb86fc; /* Accent color for headings */
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #8ab4f8;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #03dac6; /* Soft green hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        margin-right: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+}
